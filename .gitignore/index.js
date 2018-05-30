@@ -246,17 +246,7 @@ bot.on("message", async function (message) {
         .setTimestamp()
     message.delete()
     bot.channels.findAll('name', 'vcs-sk').map(channel => channel.send(dev_embed));
-    }else if(message.author.id === "274240989944610827"){
-        const zenfix_embed = new Discord.RichEmbed()
-        .setColor("#ff0066")
-            .addField("❤️ - " + message.author.username + " – VCS", msgvcs)
-            .addField("----------------------", "Provenance du message : ``" + message.guild.name + "``", true)
-        .setThumbnail(message.author.avatarURL)
-        .setFooter("Par Ilian^^ !")
-        .setTimestamp()
-        message.delete()
-        bot.channels.findAll('name', 'vcs-sk').map(channel => channel.send(zenfix_embed));
-        }else {   
+    }else {   
     const vcs_embed = new Discord.RichEmbed()
     .setColor("#F7FE2E")
         .addField("Utilisateur - " + message.author.username + " – VCS", msgvcs)
