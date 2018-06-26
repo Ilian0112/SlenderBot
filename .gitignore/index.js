@@ -230,7 +230,7 @@ bot.on("message", async function (message) {
         const fonda_embed = new Discord.RichEmbed()
         .setColor("#B40404")
             .addField("Fondateur - " + message.author.username + " – VCS", msgvcs)
-            .addField("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬", "Provenance du message : ``" + message.guild.name + "``", true)
+            .addField("----------------------", "Provenance du message : ``" + message.guild.name + "``", true)
         .setThumbnail(message.author.avatarURL)
         .setFooter("Par Ilian^^ !")
         .setTimestamp()
